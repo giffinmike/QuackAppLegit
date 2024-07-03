@@ -29,6 +29,7 @@ app.use(
     origin: [
       "http://localhost:5173",
       "https://aqueous-fortress-42552-d35f4f194ee9.herokuapp.com",
+      "https://quack-app-legit-hst94bsk1-giffinmikes-projects.vercel.app",
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
@@ -133,6 +134,7 @@ const io = new SocketIOServer(server, {
     origin: [
       "http://localhost:5173",
       "https://aqueous-fortress-42552-d35f4f194ee9.herokuapp.com",
+      "https://quack-app-legit-hst94bsk1-giffinmikes-projects.vercel.app",
     ],
     methods: ["GET", "POST"],
   },
