@@ -23,6 +23,8 @@ app.use(cors({
     origin: [
         "http://localhost:5173",
         "https://aqueous-fortress-42552-d35f4f194ee9.herokuapp.com",
+        "https://quack-app-legit-c4ungpruv-giffinmikes-projects.vercel.app",
+        "https://quack-app-legit.vercel.app",
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
@@ -51,7 +53,7 @@ app.get("/testdb", async (req, res) => {
     }
 });
 // Simple test routes
-app.get("/troppers", (req, res) => {
+app.get("/troopers", (req, res) => {
     console.log("troopers route accessed");
     res.json({ message: "troopers route is working" });
 });
@@ -114,6 +116,8 @@ const io = new SocketIOServer(server, {
         origin: [
             "http://localhost:5173",
             "https://aqueous-fortress-42552-d35f4f194ee9.herokuapp.com",
+            "https://quack-app-legit-c4ungpruv-giffinmikes-projects.vercel.app",
+            "https://quack-app-legit.vercel.app",
         ],
         methods: ["GET", "POST"],
     },
@@ -121,7 +125,7 @@ const io = new SocketIOServer(server, {
 io.on("connection", (socket) => {
     console.log("New client connected", socket.id);
 });
-/////////
+////////////
 // import "tsconfig-paths/register.js";
 // import express from "express";
 // import path from "path";
