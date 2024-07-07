@@ -36,8 +36,7 @@ const corsOptions = {
     "http://localhost:5173",
     "http://localhost:4173",
     "http://192.168.0.211:5173",
-    "https://aqueous-fortress-42552-d35f4f194ee9.herokuapp.com",
-    "https://quack-app-legit.vercel.app",
+    "https://still-spire-93382-d8b0f28e8a9e.herokuapp.com",
   ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true,
@@ -97,8 +96,7 @@ const io = new SocketIOServer(server, {
       "http://localhost:5173",
       "http://localhost:4173",
       "http://192.168.0.211:5173",
-      "https://aqueous-fortress-42552-d35f4f194ee9.herokuapp.com",
-      "https://quack-app-legit.vercel.app",
+      "https://still-spire-93382-d8b0f28e8a9e.herokuapp.com",
     ],
     methods: ["GET", "POST"],
   },
@@ -117,7 +115,7 @@ io.on("connection", (socket) => {
   });
 });
 
-///////////
+//////////////
 
 // import express from "express";
 // import path from "path";
